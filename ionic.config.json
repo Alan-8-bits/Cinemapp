@@ -1,0 +1,14 @@
+{
+  "name": "cinemapp",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/cinemapp",
+      "proxyUrl": "http://127.0.0.1:5000"
+    }
+  ]
+}

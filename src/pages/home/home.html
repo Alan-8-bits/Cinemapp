@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Películas
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="clickAdd()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-content padding>
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngFor="let pelicula of peliculas">
+          <ion-card>
+            <img src="{{pelicula.image}}">
+            <ion-card-content>
+              <h2>{{pelicula.titulo}}</h2>
+              <h3>{{pelicula.director}}</h3>
+              <p>{{pelicula.anio}}</p>
+              <p>{{pelicula.fecha_visto}}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-content>
